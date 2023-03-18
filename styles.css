@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
-
-
-/* Basic Reset */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -27,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: black;
 }
 
 li {
@@ -77,11 +66,7 @@ Navigation
 }
 .sticky {
   position: fixed;
-  
 }
-
-
-
 .nav-center {
   background-color: #55555562;
   justify-content: space-between;
@@ -129,8 +114,11 @@ Navigation
   }
 
   .nav-list.open {
-    left: 0;
+    left: 0px;
     width: 100%;
+    top: 66px;
+    height: 500px;
+    text-align: center;
   }
 
   .nav-list .nav-item {
@@ -577,7 +565,6 @@ Navigation
 /* Footer */
 .footer {
   padding: 7rem 1rem;
-  color: #ffffff;
   background-color: #303441;
 }
 
@@ -588,8 +575,11 @@ footer .row {
   margin: 0 auto;
 }
 
-
-
+.footer .col {
+  flex-direction: column;
+  color: var(--white);
+  align-items: flex-start;
+}
 
 .footer .col:last-child {
   flex-direction: row;
@@ -599,11 +589,11 @@ footer .row {
 .footer .col:last-child span {
   font-size: 2.5rem;
   margin-right: 0.5rem;
-  color: var(--white);
+  color: white;
 }
 
 .footer .col a {
-  color: var(--white);
+  color: white;
   font-size: 1.5rem;
   padding: 0.5rem;
   font-weight: 300;
@@ -611,6 +601,8 @@ footer .row {
 
 .footer .col h4 {
   margin-bottom: 1rem;
+  color: white;
+
 }
 
 @media only screen and (max-width: 567px) {
